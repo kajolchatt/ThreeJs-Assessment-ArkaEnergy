@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(152, 211, 152, 0.737);
+}
+#canvas-container {
+  width: 70rem;
+  height: 40rem;
+  margin: auto;
+  display: block;
+  border: 5px solid palegreen;
+  background-color: white;
+}
+#controls {
+  text-align: center;
+  margin-top: 10px;
+}
+button {
+  background-color: #66d66a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
