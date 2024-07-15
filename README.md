@@ -26,11 +26,5 @@ The `resetScene` method allows users to reset the scene back to its initial stat
 **How to Run the Application**
 
 1.  Open your terminal or command prompt.
-2.  Navigate to the directory where you have saved the `PolygonScene.js` file.
-3.  Run the following command: `node PolygonScene.js`
-
-This will start a web server that renders the `PolygonScene` application in your default browser.
-
-**Note**
-
-The application may not work correctly on all devices or browsers due to its reliance on the `THREE.js` library and other third-party dependencies.
+2.  Navigate to the directory where you have saved the file.
+3.  Right click and open with live server.
