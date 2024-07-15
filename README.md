@@ -1,3 +1,36 @@
-Implemented Three.js to create a 2D scene where users can draw polygons with any number of sides by placing vertices with the mouse over the screen.
-It includes features for drawing the polygon, completing the polygon, copying it, and resetting the scene.
-The project emphasizes object-oriented programming principles, with distinct classes dedicated to managing the polygons.
+**README.md**
+================================
+
+### PolygonScene
+
+The `PolygonScene` class is a JavaScript application that allows users to draw polygons in a 3D space. The scene includes features such as grid lines, vertex points, and polygon rendering. Users can 
+interact with the scene by clicking and dragging to create new vertices and complete or copy existing polygons.
+
+### Features
+
+*   **Grid Lines**: A grid system is implemented using the `THREE.GridHelper` class. This provides a helpful visual aid for users when drawing polygons.
+*   **Vertex Points**: Each vertex point is represented as a 3D sphere, allowing users to easily identify and manipulate individual points.
+*   **Polygon Rendering**: Completed polygons are rendered in the scene using the `THREE.MeshBasicMaterial` class. Edges of the polygon are highlighted with a thin black line for better visibility.
+
+### Interactions
+
+*   **Clicking and Dragging**: Users can create new vertices by clicking on the grid lines. The vertex points will follow the mouse movement as long as the left mouse button is held down.
+*   **Completing Polygons**: When the user releases the mouse button, a completed polygon is formed from the vertices created. This polygon is then added to the scene and rendered with the specified 
+material.
+*   **Copying Polygons**: Users can copy an existing polygon by clicking on it. The copied polygon will be added to the scene as a new, separate entity.
+
+### Resetting the Scene
+
+The `resetScene` method allows users to reset the scene back to its initial state. This involves removing all vertex points, polygons, and copied polygons from the scene.
+
+**How to Run the Application**
+
+1.  Open your terminal or command prompt.
+2.  Navigate to the directory where you have saved the `PolygonScene.js` file.
+3.  Run the following command: `node PolygonScene.js`
+
+This will start a web server that renders the `PolygonScene` application in your default browser.
+
+**Note**
+
+The application may not work correctly on all devices or browsers due to its reliance on the `THREE.js` library and other third-party dependencies.
